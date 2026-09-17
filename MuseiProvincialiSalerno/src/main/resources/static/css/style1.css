@@ -1,0 +1,804 @@
+* {
+    box-sizing: border-box;
+}
+:root{
+
+    --blu-museo:#102A43;
+    --blu-scuro:#0B1F33;
+
+    --oro:#C49A3A;
+    --oro-hover:#A67C22;
+
+    --sfondo:#F5F1E8;
+    --bianco:#FFFFFF;
+
+    --testo:#333333;
+
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+    background:var(--sfondo);
+    color:var(--testo);
+
+}
+.navbar{
+
+    background:var(--blu-museo)!important;
+
+    padding:18px 0;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+
+}
+
+.navbar-brand{
+
+    font-size:26px;
+
+    font-weight:bold;
+
+    letter-spacing:.5px;
+
+}
+
+.nav-link{
+
+    color:white!important;
+
+    margin-left:15px;
+
+    transition:.3s;
+
+    font-weight:500;
+
+}
+
+.nav-link:hover{
+
+    color:var(--oro)!important;
+
+}
+.hero{
+
+    position:relative;
+
+    height:550px;
+
+    background:url("../img/salerno.jpg") center center/cover;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(16,42,67,.55);
+
+}
+
+.overlay{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.hero h1{
+
+    font-size:60px;
+
+    font-weight:bold;
+
+    text-shadow:2px 2px 8px rgba(0,0,0,.5);
+
+}
+
+.hero p{
+
+    font-size:22px;
+
+} 
+
+.btn-warning{
+
+    background:var(--oro);
+
+    border:none;
+
+    border-radius:30px;
+
+    padding:12px 28px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.btn-warning:hover{
+
+    background:var(--oro-hover);
+
+    transform:translateY(-3px);
+
+}
+
+
+body{
+
+    background:var(--sfondo);
+
+    color:var(--testo);
+
+    font-family:Arial,sans-serif;
+
+}
+
+
+
+.logo {
+
+    font-size:22px;
+    font-weight:bold;
+
+}
+
+
+
+nav a:hover {
+
+    color:var(--oro);
+
+}
+
+
+.btn {
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:12px 25px;
+
+    background:var(--oro);
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:5px;
+
+}
+
+
+
+.presentazione {
+
+    padding:50px;
+
+    text-align:center;
+
+}
+
+
+
+.presentazione p {
+
+    max-width:900px;
+
+    margin:auto;
+
+    line-height:1.7;
+
+}
+
+
+
+.anteprima {
+
+    padding:40px;
+
+    background:#f5f5f5;
+
+}
+
+
+
+footer {
+
+    background:#222;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin:0;
+    font-family: Arial, sans-serif;
+    color:#333;
+
+}
+
+
+header {
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 50px;
+
+    background:#222;
+    color:white;
+
+}
+
+
+
+.logo {
+
+    font-size:22px;
+    font-weight:bold;
+
+}
+
+
+
+nav a {
+
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+
+}
+
+
+
+.hero {
+
+    height:500px;
+
+    background-image:url("../img/salerno.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+
+
+.hero-content {
+
+    background:rgba(0,0,0,0.55);
+
+    padding:40px;
+
+    color:white;
+
+    border-radius:10px;
+
+}
+
+
+
+.hero h1 {
+
+    font-size:45px;
+
+}
+
+
+
+.btn {
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:12px 25px;
+
+    background:var(--oro);
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:5px;
+
+}
+
+
+
+.presentazione {
+
+    padding:50px;
+
+    text-align:center;
+
+}
+
+
+
+.presentazione p {
+
+    max-width:900px;
+
+    margin:auto;
+
+    line-height:1.7;
+
+}
+
+
+
+.anteprima {
+
+    padding:40px;
+
+    background:#f5f5f5;
+
+}
+
+
+
+footer {
+
+    background:#222;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+#museiHome {
+
+    display:flex;
+    gap:25px;
+    overflow:hidden;
+    width:100%;
+
+}
+
+
+
+
+.card-museo img {
+
+    width:100%;
+    height:200px;
+    object-fit:cover;
+
+}
+
+
+
+.card-museo h3 {
+
+    padding:0 20px;
+
+}
+
+
+
+.card-museo p {
+
+    padding:0 20px;
+
+    line-height:1.5;
+
+}
+
+
+
+.card-museo a {
+
+    display:block;
+
+    margin:20px;
+
+    text-align:center;
+
+    padding:10px;
+
+    background:#b8860b;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:5px;
+
+}
+.card-content{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+}
+
+
+.card{
+
+    border:none;
+
+    transition:0.3s;
+
+}
+.card-content a{
+    margin-top:auto;
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+}
+
+.card img{
+
+    height:250px;
+
+    object-fit:cover;
+
+}
+
+.card-title{
+
+    color:#1b365d;
+
+    font-weight:bold;
+
+}
+
+.card-footer{
+
+    background:white;
+
+    border:none;
+
+}
+
+.btn-warning{
+
+    width:100%;
+
+}
+/* CARD MUSEI */
+
+.card{
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+
+.card:hover{
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 30px rgba(0,0,0,.25);
+
+}
+
+.card img{
+
+    transition: transform .4s;
+
+}
+
+.card:hover img{
+
+    transform: scale(1.05);
+
+}
+.btn{
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:scale(1.05);
+
+}
+.hero{
+
+    background-image:url("../img/salerno.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    height:500px;
+
+    position:relative;
+
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.45);
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    color:white;
+
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+.footer{
+
+    background:#212529;
+
+    color:white;
+
+    padding:40px 20px;
+
+}
+.slider-container{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+}
+
+.slider-track{
+
+    display:flex;
+    gap:25px;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    scrollbar-width:none;
+    flex:1;
+
+}
+
+.slider-track::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+.card-museo{
+
+    min-width:320px;
+    max-width:320px;
+
+    border-radius:15px;
+    overflow:hidden;
+
+    background:white;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+    flex-shrink:0;
+
+}
+
+.card-museo:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card-museo img{
+
+    width:100%;
+    height:220px;
+    object-fit:cover;
+
+}
+
+.card-body-home{
+
+    display:flex;
+    flex-direction:column;
+
+    padding:20px;
+
+    min-height:170px;
+
+}
+
+.card-body-home a{
+
+    margin-top:auto;
+
+}
+
+.slider-btn{
+
+    border:none;
+
+    background:#ffc107;
+
+    color:black;
+
+    font-size:30px;
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+}
+/* Altezza uniforme descrizione */
+
+.card-body {
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+.info-museo {
+
+    margin-top:20px;
+
+}
+
+
+.info-museo p {
+
+    margin-bottom:8px;
+
+}
+
+
+/* Informazioni sempre allineate */
+
+.info-museo {
+
+    margin-top:auto;
+
+}
+
+
+.info-museo p {
+
+    margin-bottom:10px;
+
+}
+/* CARDS CAROSELLO HOME */
+
+.card-body-home {
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+    min-height:180px;
+
+}
+
+
+.card-body-home h4 {
+
+    margin-bottom:15px;
+
+    color:#1b365d;
+
+    text-align:center;
+
+}
+
+
+.card-body-home p {
+
+    text-align:center;
+
+    line-height:1.5;
+
+    margin-bottom:20px;
+
+}
+
+
+
+/* Bottone piccolo centrato */
+
+.btn-scopri {
+
+    display:inline-block;
+
+    padding:10px 25px;
+
+    background:#b8860b;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:25px;
+
+    transition:.3s;
+
+}
+
+
+.btn-scopri:hover {
+
+    background:#8c6500;
+
+    transform:scale(1.05);
+
+}

@@ -1,0 +1,764 @@
+/*==================================================
+=            VARIABILI COLORI
+==================================================*/
+
+:root{
+
+    --blu-museo:#102A43;
+    --blu-scuro:#0B1F33;
+
+    --oro:#C49A3A;
+    --oro-hover:#A67C22;
+
+    --sfondo:#F5F1E8;
+    --bianco:#FFFFFF;
+
+    --testo:#333333;
+
+    --ombra:0 8px 25px rgba(0,0,0,.15);
+
+}
+
+/*==================================================
+=            RESET
+==================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/*==================================================
+=            BODY
+==================================================*/
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:var(--sfondo);
+
+    color:var(--testo);
+
+    line-height:1.6;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+/*==================================================
+=            NAVBAR
+==================================================*/
+
+.navbar{
+
+    background:var(--blu-museo)!important;
+
+    padding:18px 0;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.navbar-brand{
+
+    font-size:26px;
+
+    font-weight:bold;
+
+    letter-spacing:.5px;
+
+}
+
+.nav-link{
+
+    color:white!important;
+
+    margin-left:18px;
+
+    transition:.3s;
+
+    font-weight:500;
+
+}
+
+.nav-link:hover{
+
+    color:var(--oro)!important;
+
+}
+
+/*==================================================
+=            HERO
+==================================================*/
+
+.hero{
+
+    position:relative;
+
+    height:550px;
+
+    background:url("../img/salerno.jpg") center center/cover;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(16,42,67,.60);
+
+}
+
+.overlay{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.hero h1{
+
+    color:white;
+
+    font-size:60px;
+
+    font-weight:bold;
+
+    text-shadow:3px 3px 10px rgba(0,0,0,.45);
+
+}
+
+.hero p{
+
+    color:white;
+
+    font-size:22px;
+
+    max-width:800px;
+
+    margin:auto;
+
+}
+
+/*==================================================
+=            TITOLI
+==================================================*/
+
+h2{
+
+    color:var(--blu-museo);
+
+    font-weight:bold;
+
+}
+
+/*==================================================
+=            BOTTONI
+==================================================*/
+
+.btn{
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.btn-warning{
+
+    background:var(--oro);
+
+    border:none;
+
+    color:white;
+
+    font-weight:bold;
+
+    padding:12px 28px;
+
+}
+
+.btn-warning:hover{
+
+    background:var(--oro-hover);
+
+    color:white;
+
+}
+
+/*==================================================
+=            CARD GENERICHE
+==================================================*/
+
+.card{
+
+    border:none;
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+    box-shadow:0 4px 18px rgba(0,0,0,.12);
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:100%;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 12px 28px rgba(0,0,0,.22);
+
+}
+
+.card img{
+
+    height:240px;
+
+    object-fit:cover;
+
+    transition:.4s;
+
+}
+
+.card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.card-title{
+
+    color:var(--blu-museo);
+
+    font-weight:bold;
+
+}
+
+{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.card-footer{
+
+    background:white;
+
+    border:none;
+
+}
+
+.info-museo{
+
+    margin-top:auto;
+
+}
+
+.info-museo p{
+
+    margin-bottom:10px;
+
+}
+
+/*==================================================
+=            SEZIONI
+==================================================*/
+
+section{
+
+    padding:70px 0;
+
+}
+
+.presentazione{
+
+    text-align:center;
+
+}
+
+.presentazione p{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.anteprima{
+
+    background:#ece6da;
+
+}
+
+/*==================================================
+=            CAROSELLO HOME
+==================================================*/
+
+.slider-container{
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+}
+
+.slider-track{
+
+    display:flex;
+    gap:25px;
+
+    overflow-x:auto;
+
+    scroll-behavior:smooth;
+
+    scrollbar-width:none;
+
+    flex:1;
+
+}
+
+.slider-track::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+#museiHome{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+/*==================================================
+=            CARD HOME
+==================================================*/
+
+.card-museo{
+
+    min-width:320px;
+
+    max-width:320px;
+
+    background:var(--bianco);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:var(--ombra);
+
+    transition:.35s;
+
+    flex-shrink:0;
+
+}
+
+.card-museo:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card-museo img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.card-body-home{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+    flex:1;
+
+}
+
+.card-body-home h4{
+
+    color:var(--blu-museo);
+
+
+    min-height:60px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+     text-align:center;
+
+}
+
+.card-body-home p{
+
+    margin-bottom:20px;
+
+}
+
+.btn-scopri{
+
+    margin-top:auto;
+
+}
+
+.btn-scopri{
+
+    display:inline-block;
+
+    background:var(--oro);
+
+    color:white;
+
+    padding:10px 24px;
+
+    border-radius:25px;
+
+    transition:.3s;
+
+}
+
+.btn-scopri:hover{
+
+    background:var(--oro-hover);
+
+    color:white;
+
+}
+
+/*==================================================
+=            PULSANTI CAROSELLO
+==================================================*/
+
+.slider-btn{
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--oro);
+
+    color:white;
+
+    font-size:28px;
+
+    transition:.3s;
+
+}
+
+.slider-btn:hover{
+
+    background:var(--oro-hover);
+
+}
+
+/*==================================================
+=            PAGINA MUSEI
+==================================================*/
+
+.card-text{
+
+    text-align:justify;
+
+    line-height:1.6;
+
+}
+
+.info-museo strong{
+
+    color:var(--blu-museo);
+
+}
+
+/*==================================================
+=            PRENOTAZIONE
+==================================================*/
+
+form{
+
+    margin-top:20px;
+
+}
+
+.form-control,
+
+.form-select{
+
+    border-radius:12px;
+
+    border:1px solid #d6d6d6;
+
+    padding:12px;
+
+}
+
+.form-control:focus,
+
+.form-select:focus{
+
+    border-color:var(--oro);
+
+    box-shadow:0 0 8px rgba(196,154,58,.35);
+
+}
+
+label{
+
+    font-weight:bold;
+
+    color:var(--blu-museo);
+
+}
+
+.alert{
+
+    border-radius:12px;
+
+}
+
+/*==================================================
+=            MIE PRENOTAZIONI
+==================================================*/
+
+.badge{
+
+    font-size:.9rem;
+
+    padding:8px 12px;
+
+    border-radius:20px;
+
+}
+
+.bg-warning{
+
+    background:var(--oro)!important;
+
+}
+
+.bg-success{
+
+    background:#2e7d32!important;
+
+}
+
+.bg-danger{
+
+    background:#c62828!important;
+
+}
+
+/*==================================================
+=            CHI SIAMO
+==================================================*/
+
+.chi-siamo{
+
+    padding:70px 0;
+
+}
+
+.chi-siamo h2{
+
+    color:var(--blu-museo);
+
+    margin-bottom:25px;
+
+}
+
+.chi-siamo p{
+
+    line-height:1.8;
+
+    font-size:17px;
+
+}
+
+/*==================================================
+=            FOOTER
+==================================================*/
+
+.footer{
+
+    background:var(--blu-scuro);
+
+    color:white;
+
+    padding:50px 20px;
+
+    margin-top:70px;
+
+}
+
+.footer h4{
+
+    color:var(--oro);
+
+    margin-bottom:15px;
+
+}
+
+.footer p{
+
+    color:var(--oro);
+
+    margin:0;
+
+}
+
+/*==================================================
+=            ANIMAZIONI
+==================================================*/
+
+img{
+
+    transition:.35s;
+
+}
+
+img:hover{
+
+    transform:scale(1.02);
+
+}
+
+button{
+
+    transition:.3s;
+
+}
+
+/*==================================================
+=            RESPONSIVE
+==================================================*/
+
+@media(max-width:992px){
+
+.hero h1{
+
+    font-size:45px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+    height:420px;
+
+}
+
+.hero h1{
+
+    font-size:34px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+.navbar-brand{
+
+    font-size:22px;
+
+}
+
+.card-museo{
+
+    min-width:280px;
+
+    max-width:280px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.hero{
+
+    height:360px;
+
+}
+
+.hero h1{
+
+    font-size:28px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.btn-warning{
+
+    width:100%;
+
+}
+
+}

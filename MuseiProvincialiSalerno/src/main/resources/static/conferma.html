@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ricevuta Prenotazione</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold" href="index.html">
+Musei Provinciali di Salerno
+</a>
+
+</div>
+
+</nav>
+
+
+<div class="container my-5">
+
+<div class="card shadow-lg border-0">
+
+<div class="card-body p-5">
+
+<div class="text-center">
+
+<h1 class="text-success mb-3">
+
+✅ PRENOTAZIONE CONFERMATA
+
+</h1>
+
+<p class="text-muted">
+
+Conserva questa ricevuta.
+
+</p>
+
+</div>
+
+<hr>
+
+<div class="text-center my-4">
+
+<h6 class="text-muted">
+
+CODICE PRENOTAZIONE
+
+</h6>
+
+<h2
+id="codicePrenotazione"
+class="fw-bold text-primary">
+
+</h2>
+
+</div>
+
+<div class="row">
+
+<div class="col-md-8">
+
+<table class="table table-bordered">
+
+<tr>
+
+<th width="35%">
+Museo
+</th>
+
+<td id="museo"></td>
+
+</tr>
+
+<tr>
+
+<th>
+Visitatore
+</th>
+
+<td id="ospite"></td>
+
+</tr>
+
+<tr>
+
+<th>
+Email
+</th>
+
+<td id="email"></td>
+
+</tr>
+
+<tr>
+
+<th>
+Telefono
+</th>
+
+<td id="telefono"></td>
+
+</tr>
+
+<tr>
+
+<th>
+Data visita
+</th>
+
+<td id="data"></td>
+
+</tr>
+
+<tr>
+
+<th>
+Ora visita
+</th>
+
+<td id="ora"></td>
+
+</tr>
+
+<tr>
+
+<th>
+Numero ospiti
+</th>
+
+<td id="numOspiti"></td>
+
+</tr>
+
+<tr>
+
+<th>
+Stato
+</th>
+
+<td id="stato"></td>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<div
+id="messaggioFinale"
+class="alert alert-info mt-4">
+
+</div>
+
+<div class="text-center mt-5">
+
+<button
+class="btn btn-warning me-3"
+onclick="stampaPDF()">
+
+🖨️ Stampa
+
+</button>
+
+<button
+    id="btnPdf"
+    onclick="scaricaPDF()"
+    class="btn btn-danger">
+
+    📄 Scarica PDF
+
+</button>
+
+<a
+href="index.html"
+class="btn btn-secondary">
+
+🏠 Home
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="ricevutaPdf" style="display:none">
+
+    <h1>Musei Provinciali di Salerno</h1>
+
+    <h2>Ricevuta di Prenotazione</h2>
+
+    <hr>
+
+    <p><strong>Codice prenotazione:</strong>
+        <span id="pdfCodice"></span>
+    </p>
+
+    <p><strong>Museo:</strong>
+        <span id="pdfMuseo"></span>
+    </p>
+
+    <p><strong>Visitatore:</strong>
+        <span id="pdfOspite"></span>
+    </p>
+
+    <p><strong>Email:</strong>
+        <span id="pdfEmail"></span>
+    </p>
+
+    <p><strong>Telefono:</strong>
+        <span id="pdfTelefono"></span>
+    </p>
+
+    <p><strong>Data visita:</strong>
+        <span id="pdfData"></span>
+    </p>
+
+    <p><strong>Ora:</strong>
+        <span id="pdfOra"></span>
+    </p>
+
+    <p><strong>Numero partecipanti:</strong>
+        <span id="pdfNumero"></span>
+    </p>
+
+    <p><strong>Stato:</strong>
+        <span id="pdfStato"></span>
+    </p>
+
+    <hr>
+
+    <p>
+        Conservare questa ricevuta ed esibirla all'ingresso del museo.
+    </p>
+
+</div>
+
+<footer class="footer mt-5">
+
+<div class="container text-center">
+
+<h4>
+
+Musei Provinciali di Salerno
+
+</h4>
+
+<p>
+
+© 2026 Tutti i diritti riservati
+
+</p>
+
+</div>
+
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.6/dist/JsBarcode.all.min.js"></script>
+
+<script src="js/conferma.js"></script>
+
+<canvas id="barcodeCanvas" style="display:none;"></canvas>
+
+</body>
+
+</html>
